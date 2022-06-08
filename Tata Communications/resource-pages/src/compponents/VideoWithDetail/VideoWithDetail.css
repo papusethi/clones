@@ -1,0 +1,67 @@
+.video-parent {
+  width: 403px;
+  height: 313px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(110, 133, 255, 0.23) -19.5%,
+    rgba(0, 194, 255, 0.02) 104.29%
+  );
+  backdrop-filter: blur(73px);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 50px;
+  position: relative;
+  text-align: left;
+}
+
+.video-parent video {
+  width: 371.01px;
+  height: 204.37px;
+  background-size: cover;
+}
+.video-parent::before {
+  position: absolute;
+  content: "";
+  background: url("../../assets/images/playbtn.png");
+  width: 58px;
+  height: 58px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 1;
+  top: 43%;
+  left: 52%;
+  transform: translate(-50%, -68%);
+}
+.video-parent::after {
+  position: absolute;
+  content: "";
+  width: 77px;
+  height: 71px;
+  background: #1b212f;
+  right: -34px;
+  bottom: -46px;
+  transform: rotate(45deg) translateX(10px);
+}
+.video-parent p {
+  /* font-family: "Open Sans"; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .video-parent,
+  .video-parent video {
+    width: 100%;
+  }
+  .video-parent img {
+    width: 295px;
+    height: 205px;
+  }
+  .video-parent {
+    height: 100%;
+  }
+}

@@ -1,0 +1,99 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  border-radius: 0;
+  background: transparent;
+  border: none;
+}
+
+.logo {
+  width: 267px;
+  height: 20px;
+}
+
+.header ul {
+  width: 100%;
+  justify-content: end;
+}
+
+.header .p-menubar-root-list > .p-menuitem > .p-menuitem-link .p-menuitem-text,
+.header
+  .p-menubar-root-list
+  > .p-menuitem
+  > .p-menuitem-link:not(.p-disabled):hover
+  .p-menuitem-text {
+  color: #ffffff;
+}
+.header .p-menubar-root-list > .p-menuitem > .p-menuitem-link {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 16px;
+}
+.nav-links {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  position: relative;
+  border: none;
+  color: #fff;
+}
+.header .p-menuitem-link:before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  background: linear-gradient(354.27deg, #ff3e3e 7.76%, #ffdc81 90.99%);
+  bottom: 10px;
+  border-radius: 15px;
+  opacity: 0;
+  transition: 0.25s all ease;
+}
+.header .p-menuitem-link:hover:before {
+  opacity: 1;
+}
+.header .p-menuitem-link:after {
+  content: "";
+  position: absolute;
+  width: 5.26px;
+  height: 5.26px;
+  bottom: 8px;
+  left: 50%;
+  opacity: 0;
+  background: url("../../assets/images/navbar-afterbg.svg");
+  border-radius: 50%;
+  transition: 0.25s all ease;
+}
+
+.header .p-menuitem-link:hover:after {
+  opacity: 1;
+}
+
+.header .p-menuitem:nth-child(3) .p-menuitem-link::before,
+.header .p-menuitem:nth-child(3) .p-menuitem-link::after,
+.header .p-menuitem:nth-child(4) .p-menuitem-link::before,
+.header .p-menuitem:nth-child(4) .p-menuitem-link::after {
+  background: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .header {
+    padding: 10px;
+  }
+  .header .p-menubar-root-list,
+  .p-menubar .p-menubar-button:hover {
+    background: transparent;
+    box-shadow: none;
+  }
+  .nav-links .primary_btn_bg {
+    margin: 0;
+  }
+  .header {
+    display: none;
+  }
+}

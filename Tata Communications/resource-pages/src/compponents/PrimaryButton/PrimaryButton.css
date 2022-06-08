@@ -1,0 +1,18 @@
+.p-menubar-end {
+  position: relative;
+  margin-left: unset;
+}
+.primary_btn_bg {
+  background: url("../../assets/images/button.png");
+  color: #fff;
+  border: none;
+  background-size: 100%;
+  padding: 5px 17px;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  justify-content: center;
+  margin-left: 16px;
+  cursor: pointer;
+}

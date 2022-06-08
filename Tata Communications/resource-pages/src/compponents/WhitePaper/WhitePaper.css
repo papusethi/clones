@@ -1,0 +1,65 @@
+.whitepaper-parent {
+  width: 403px;
+
+  height: 412px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(110, 133, 255, 0.23) -14.81%,
+    rgba(0, 194, 255, 0.02) 79.23%
+  );
+
+  border-radius: 12px;
+  backdrop-filter: blur(73px);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 50px;
+  position: relative;
+  text-align: left;
+}
+.whitepaper-parent h4 {
+  /* font-family: "Open Sans"; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+  position: relative;
+}
+.whitepaper-parent h4::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: #528dff;
+  bottom: -12px;
+  left: 0;
+}
+.whitepaper-parent p {
+  /* font-family: "Open Sans"; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.whitepaper-parent .primary_btn_bg {
+  margin: 0;
+  padding: 17px 23px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .whitepaper-parent {
+    height: auto;
+  }
+  .whitepaper-parent h4 {
+    margin: 0;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .whitepaper-parent p {
+    margin: 30px 0;
+  }
+}

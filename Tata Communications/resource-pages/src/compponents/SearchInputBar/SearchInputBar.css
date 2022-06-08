@@ -1,0 +1,44 @@
+.p-input-icon-right {
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+.search-bar-input {
+  width: 1166px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  background: transparent;
+  box-shadow: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+
+.search-bar-input::placeholder,
+.p-input-icon-right > i:last-of-type,
+.p-autocomplete-panel .p-autocomplete-items .p-autocomplete-item,
+.p-autocomplete-panel .p-autocomplete-items .p-autocomplete-item:hover {
+  color: #fff;
+}
+.p-autocomplete-panel .p-autocomplete-items {
+  background: #1c283d;
+  border: 1px solid #00caed;
+  backdrop-filter: blur(200px);
+}
+.p-autocomplete-panel .p-autocomplete-items .p-autocomplete-item {
+  padding: 16px 20px;
+}
+.p-autocomplete-panel .p-autocomplete-items .p-autocomplete-item:hover {
+  background: transparent;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .p-input-icon-right {
+    margin: 0;
+  }
+  .search-bar-input {
+    width: 342px;
+  }
+}

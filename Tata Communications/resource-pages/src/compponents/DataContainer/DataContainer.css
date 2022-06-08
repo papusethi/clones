@@ -1,0 +1,18 @@
+.data-parent {
+  margin-top: 60px;
+  display: flex;
+  padding: 0 144px;
+  flex-direction: column;
+}
+.data-child {
+  display: flex;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .data-parent {
+    padding: 0 20px;
+    margin-top: 50px;
+  }
+  .data-child {
+    flex-direction: column;
+  }
+}

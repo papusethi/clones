@@ -1,0 +1,67 @@
+.post-parent {
+  width: 403px;
+  height: 488px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(110, 133, 255, 0.23) -14.81%,
+    rgba(0, 194, 255, 0.02) 79.23%
+  );
+
+  border-radius: 12px;
+  backdrop-filter: blur(73px);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 50px;
+  position: relative;
+  text-align: left;
+}
+
+.post-parent img {
+  width: 371.01px;
+  height: 204.37px;
+  background-size: cover;
+}
+.post-parent::after {
+  position: absolute;
+  content: "";
+  width: 77px;
+  height: 71px;
+  background: #1b212f;
+  right: -34px;
+  bottom: -46px;
+  transform: rotate(45deg) translateX(10px);
+}
+.post-parent p {
+  /* font-family: "Open Sans"; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  color: #fff;
+}
+
+.post-parent .primary_btn_bg {
+  margin: 0;
+  padding: 17px 23px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .post-parent,
+  .post-parent video {
+    width: 100%;
+    height: auto;
+  }
+  .post-parent img {
+    width: 295px;
+    height: 205px;
+  }
+  .post-parent p {
+    /* font-family: "Open Sans"; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+  }
+}
